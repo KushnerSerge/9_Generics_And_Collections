@@ -1,18 +1,26 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using _9_Generics_And_Collections;
+using _9_Generics_And_Collections.Comparer_IEquality;
 using _9_Generics_And_Collections.Entities;
 using _9_Generics_And_Collections.Presentation;
+using _9_Generics_And_Collections.SortList;
 
-Experimenting_With_List();
+//Experimenting_With_List();
 //RepositoryPatternExperiment();
+//Practice.practiceEnum();
+//Practice.PracticeArrayList();
+//Practice.PracticeLists();
+//Practice.PracticeDictionary();
 
+//PracticePlus.PracticEqualityComparer();
+TestListEqualityElements.TestingSortingList();
 
 
 void RepositoryPatternExperiment()
 {
 
-    LikeController<Company> myController = new LikeController<Company>();
+    LikeController<_9_Generics_And_Collections.Entities.Company> myController = new LikeController<Company>();
     // Post items
     Console.WriteLine("----------- Post Items -----------------");
     myController.POST(new Company { Id = 1, Name = "One Company", Rating = 4 });
